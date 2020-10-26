@@ -1,2 +1,4 @@
 1) what pwm is : https://youtu.be/B_Ysdv1xRbA
 2) what is relay and optocouplers: https://youtu.be/2BdevOmN-Zk
+3) Ev sigortası çeşitleri: https://youtu.be/D7qh2E5CY38
+4) Neutral & ground farkı: https://youtu.be/WdQt3nPWBDQ
