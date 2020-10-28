@@ -1,0 +1,9 @@
+1) mosfet kontrol
+2) sıcaklık
+3) direkt load voltage'ı okuyabilme
+4) röle toggle etmesi
+5) fan çalıştırma devresi
+6) TEK GÜÇ KABLOSU FARKLI SOKETLER takılabilir 40A lik soketler al
+7) Arduino algoritmaları
+
+**FANLARIN MODLARI OLSUN -> sesssiz, performans, sürekli açık

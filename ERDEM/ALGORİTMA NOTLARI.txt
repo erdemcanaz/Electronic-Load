@@ -1,0 +1,3 @@
+*açılıp kapanma güvenli ve yavaşça olsun
+*bi sorun olursa gerçekten devre manuel toggle edilene kadar güvenliğe alsın
+*Kod olarak toggle olsun
