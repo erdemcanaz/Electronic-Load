@@ -603,12 +603,12 @@ ARDUINO MEASURES CURRENT\n
 $Comp
 L Device:R R?
 U 1 1 606E0BFE
-P 2350 6900
-F 0 "R?" V 2143 6900 50  0000 C CNN
-F 1 "999k" V 2234 6900 50  0000 C CNN
-F 2 "" V 2280 6900 50  0001 C CNN
-F 3 "~" H 2350 6900 50  0001 C CNN
-	1    2350 6900
+P 2350 6800
+F 0 "R?" V 2143 6800 50  0000 C CNN
+F 1 "999k" V 2234 6800 50  0000 C CNN
+F 2 "" V 2280 6800 50  0001 C CNN
+F 3 "~" H 2350 6800 50  0001 C CNN
+	1    2350 6800
 	0    1    1    0   
 $EndComp
 $Comp
@@ -623,11 +623,7 @@ F 3 "~" H 1400 7250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2200 6900 2200 7250
-Wire Wire Line
 	2200 7250 2300 7250
-Wire Wire Line
-	2500 6900 2500 7250
 $Comp
 L Device:D_Zener D?
 U 1 1 606ED2A4
@@ -640,11 +636,9 @@ F 3 "~" H 2350 6550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2200 6550 2200 6900
-Connection ~ 2200 6900
+	2200 6550 2200 6800
 Wire Wire Line
-	2500 6550 2500 6900
-Connection ~ 2500 6900
+	2500 6550 2500 6800
 $Comp
 L Device:CP C?
 U 1 1 606F5255
@@ -769,12 +763,12 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 6075AE39
-P 4350 6900
-F 0 "R?" V 4143 6900 50  0000 C CNN
-F 1 "999k" V 4234 6900 50  0000 C CNN
-F 2 "" V 4280 6900 50  0001 C CNN
-F 3 "~" H 4350 6900 50  0001 C CNN
-	1    4350 6900
+P 4350 6750
+F 0 "R?" V 4143 6750 50  0000 C CNN
+F 1 "999k" V 4234 6750 50  0000 C CNN
+F 2 "" V 4280 6750 50  0001 C CNN
+F 3 "~" H 4350 6750 50  0001 C CNN
+	1    4350 6750
 	0    1    1    0   
 $EndComp
 $Comp
@@ -789,11 +783,7 @@ F 3 "~" H 3400 7250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4200 6900 4200 7250
-Wire Wire Line
 	4200 7250 4300 7250
-Wire Wire Line
-	4500 6900 4500 7250
 $Comp
 L Device:D_Zener D?
 U 1 1 6075AE48
@@ -806,11 +796,9 @@ F 3 "~" H 4350 6550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4200 6550 4200 6900
-Connection ~ 4200 6900
+	4200 6550 4200 6750
 Wire Wire Line
-	4500 6550 4500 6900
-Connection ~ 4500 6900
+	4500 6550 4500 6750
 $Comp
 L Device:CP C?
 U 1 1 6075AE52
@@ -935,12 +923,12 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 607667F7
-P 6350 6900
-F 0 "R?" V 6143 6900 50  0000 C CNN
-F 1 "999k" V 6234 6900 50  0000 C CNN
-F 2 "" V 6280 6900 50  0001 C CNN
-F 3 "~" H 6350 6900 50  0001 C CNN
-	1    6350 6900
+P 6350 6750
+F 0 "R?" V 6143 6750 50  0000 C CNN
+F 1 "999k" V 6234 6750 50  0000 C CNN
+F 2 "" V 6280 6750 50  0001 C CNN
+F 3 "~" H 6350 6750 50  0001 C CNN
+	1    6350 6750
 	0    1    1    0   
 $EndComp
 $Comp
@@ -955,11 +943,7 @@ F 3 "~" H 5400 7250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6200 6900 6200 7250
-Wire Wire Line
 	6200 7250 6300 7250
-Wire Wire Line
-	6500 6900 6500 7250
 $Comp
 L Device:D_Zener D?
 U 1 1 60766806
@@ -972,11 +956,9 @@ F 3 "~" H 6350 6550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6200 6550 6200 6900
-Connection ~ 6200 6900
+	6200 6550 6200 6750
 Wire Wire Line
-	6500 6550 6500 6900
-Connection ~ 6500 6900
+	6500 6550 6500 6750
 $Comp
 L Device:CP C?
 U 1 1 60766810
@@ -1101,12 +1083,12 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 60772144
-P 8500 6850
-F 0 "R?" V 8293 6850 50  0000 C CNN
-F 1 "999k" V 8384 6850 50  0000 C CNN
-F 2 "" V 8430 6850 50  0001 C CNN
-F 3 "~" H 8500 6850 50  0001 C CNN
-	1    8500 6850
+P 8500 6700
+F 0 "R?" V 8293 6700 50  0000 C CNN
+F 1 "999k" V 8384 6700 50  0000 C CNN
+F 2 "" V 8430 6700 50  0001 C CNN
+F 3 "~" H 8500 6700 50  0001 C CNN
+	1    8500 6700
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1121,11 +1103,7 @@ F 3 "~" H 7550 7200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8350 6850 8350 7200
-Wire Wire Line
 	8350 7200 8450 7200
-Wire Wire Line
-	8650 6850 8650 7200
 $Comp
 L Device:D_Zener D?
 U 1 1 60772153
@@ -1138,11 +1116,9 @@ F 3 "~" H 8500 6500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	8350 6500 8350 6850
-Connection ~ 8350 6850
+	8350 6500 8350 6700
 Wire Wire Line
-	8650 6500 8650 6850
-Connection ~ 8650 6850
+	8650 6500 8650 6700
 $Comp
 L Device:CP C?
 U 1 1 6077215D
@@ -1262,7 +1238,7 @@ Wire Notes Line
 Wire Notes Line
 	650  4650 9500 4650
 Text Notes 3950 8200 0    197  ~ 0
-DUMMY LOAD\n
+DUMMY LOAD-48V-30A-200W\n
 $Comp
 L Erdem:fan U?
 U 1 1 6079FFAC
@@ -1443,4 +1419,36 @@ Wire Notes Line
 	12700 7800 15100 7800
 Text Notes 13750 8400 0    50   ~ 0
 V_REF\n
+Text GLabel 2400 7250 1    50   Input ~ 0
+LOAD_+
+Connection ~ 2500 6800
+Connection ~ 2200 6800
+Wire Wire Line
+	2500 6800 2500 7250
+Wire Wire Line
+	2200 6800 2200 7250
+Text GLabel 4400 7250 1    50   Input ~ 0
+LOAD_+
+Connection ~ 4500 6750
+Connection ~ 4200 6750
+Wire Wire Line
+	4500 6750 4500 7250
+Wire Wire Line
+	4200 6750 4200 7250
+Text GLabel 6400 7250 1    50   Input ~ 0
+LOAD_+
+Connection ~ 6500 6750
+Connection ~ 6200 6750
+Wire Wire Line
+	6500 6750 6500 7250
+Wire Wire Line
+	6200 6750 6200 7250
+Connection ~ 8650 6700
+Connection ~ 8350 6700
+Wire Wire Line
+	8650 6700 8650 7200
+Wire Wire Line
+	8350 6700 8350 7200
+Text GLabel 8550 7200 1    50   Input ~ 0
+LOAD_+
 $EndSCHEMATC
