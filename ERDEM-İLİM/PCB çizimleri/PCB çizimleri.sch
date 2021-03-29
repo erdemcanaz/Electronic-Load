@@ -1,0 +1,1446 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:DIODE D?
+U 1 1 606289A8
+P 4050 2850
+F 0 "D?" H 4050 2585 50  0000 C CNN
+F 1 "DIODE" H 4050 2676 50  0000 C CNN
+F 2 "" H 4050 2850 50  0001 C CNN
+F 3 "~" H 4050 2850 50  0001 C CNN
+	1    4050 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C 100nF
+U 1 1 606299B2
+P 3750 3200
+F 0 "100nF" H 3865 3246 50  0000 L CNN
+F 1 "C" H 3865 3155 50  0000 L CNN
+F 2 "" H 3788 3050 50  0001 C CNN
+F 3 "~" H 3750 3200 50  0001 C CNN
+	1    3750 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D?
+U 1 1 60629D0F
+P 3300 3400
+F 0 "D?" V 3254 3480 50  0000 L CNN
+F 1 "6.2V" V 3345 3480 50  0000 L CNN
+F 2 "" H 3300 3400 50  0001 C CNN
+F 3 "~" H 3300 3400 50  0001 C CNN
+	1    3300 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6062A912
+P 3000 3000
+F 0 "R?" H 3070 3046 50  0000 L CNN
+F 1 "36k" H 3070 2955 50  0000 L CNN
+F 2 "" V 2930 3000 50  0001 C CNN
+F 3 "~" H 3000 3000 50  0001 C CNN
+	1    3000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6062B12F
+P 3000 3400
+F 0 "R?" H 3070 3446 50  0000 L CNN
+F 1 "4k" H 3070 3355 50  0000 L CNN
+F 2 "" V 2930 3400 50  0001 C CNN
+F 3 "~" H 3000 3400 50  0001 C CNN
+	1    3000 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2850 3750 2850
+Wire Wire Line
+	3000 3250 3000 3200
+Wire Wire Line
+	3000 3550 3300 3550
+Wire Wire Line
+	3300 3250 3300 3200
+Wire Wire Line
+	3300 3200 3000 3200
+Connection ~ 3000 3200
+Wire Wire Line
+	3000 3200 3000 3150
+Wire Wire Line
+	3750 3050 3750 2850
+Connection ~ 3750 2850
+Wire Wire Line
+	3750 2850 3000 2850
+Wire Wire Line
+	3750 3350 3750 3550
+Wire Wire Line
+	3750 3550 3300 3550
+Connection ~ 3300 3550
+$Comp
+L Amplifier_Operational:LM741 U?
+U 1 1 6062DA8F
+P 2100 3300
+F 0 "U?" H 2450 3000 50  0000 L CNN
+F 1 "LM741" H 2400 3100 50  0000 L CNN
+F 2 "" H 2150 3350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm741.pdf" H 2250 3450 50  0001 C CNN
+	1    2100 3300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2400 3200 3000 3200
+Text GLabel 2200 4000 3    50   Input ~ 0
+5V
+Text GLabel 2200 3000 1    50   Input ~ 0
+GND
+Text GLabel 1800 3300 0    50   Input ~ 0
+D3
+$Comp
+L Device:R R?
+U 1 1 606346ED
+P 2350 3850
+F 0 "R?" V 2143 3850 50  0000 C CNN
+F 1 "10k" V 2234 3850 50  0000 C CNN
+F 2 "" V 2280 3850 50  0001 C CNN
+F 3 "~" H 2350 3850 50  0001 C CNN
+	1    2350 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 606351AC
+P 2750 3850
+F 0 "R?" V 2543 3850 50  0000 C CNN
+F 1 "150" V 2634 3850 50  0000 C CNN
+F 2 "" V 2680 3850 50  0001 C CNN
+F 3 "~" H 2750 3850 50  0001 C CNN
+	1    2750 3850
+	0    1    1    0   
+$EndComp
+Text GLabel 2900 3850 2    50   Input ~ 0
+GND
+Wire Wire Line
+	2200 3600 2200 3850
+Wire Wire Line
+	2200 3850 2200 4000
+Connection ~ 2200 3850
+Wire Wire Line
+	2500 3850 2550 3850
+Wire Wire Line
+	2400 3400 2550 3400
+Wire Wire Line
+	2550 3400 2550 3850
+Connection ~ 2550 3850
+Wire Wire Line
+	2550 3850 2600 3850
+Text GLabel 3750 3750 3    50   Input ~ 0
+GND
+Wire Wire Line
+	3750 3750 3750 3550
+Connection ~ 3750 3550
+Wire Wire Line
+	3750 3550 4400 3550
+Wire Wire Line
+	4250 2850 4400 2850
+Wire Wire Line
+	4400 2850 4400 3050
+Text GLabel 4450 3050 2    50   Input ~ 0
+INPUT_+
+Text GLabel 5050 3750 0    50   Input ~ 0
+INPUT_-
+Wire Wire Line
+	4450 3050 4400 3050
+Wire Wire Line
+	4400 2850 5100 2850
+Connection ~ 4400 2850
+$Comp
+L Device:R R?
+U 1 1 606397AD
+P 8900 3050
+F 0 "R?" H 8970 3096 50  0000 L CNN
+F 1 "36k" H 8970 3005 50  0000 L CNN
+F 2 "" V 8830 3050 50  0001 C CNN
+F 3 "~" H 8900 3050 50  0001 C CNN
+	1    8900 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6063A74F
+P 8900 3400
+F 0 "R?" H 8970 3446 50  0000 L CNN
+F 1 "4k" H 8970 3355 50  0000 L CNN
+F 2 "" V 8830 3400 50  0001 C CNN
+F 3 "~" H 8900 3400 50  0001 C CNN
+	1    8900 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D?
+U 1 1 6063B8E5
+P 9200 3400
+F 0 "D?" V 9154 3480 50  0000 L CNN
+F 1 "6.2V" V 9245 3480 50  0000 L CNN
+F 2 "" H 9200 3400 50  0001 C CNN
+F 3 "~" H 9200 3400 50  0001 C CNN
+	1    9200 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8900 3250 9200 3250
+Wire Wire Line
+	8900 3250 8900 3200
+Connection ~ 8900 3250
+Wire Wire Line
+	8900 2850 8900 2900
+Wire Wire Line
+	8900 3550 9200 3550
+Connection ~ 8900 3550
+Text GLabel 8750 3250 0    50   Input ~ 0
+A0
+Wire Wire Line
+	8750 3250 8900 3250
+$Comp
+L Device:D D?
+U 1 1 60644089
+P 7550 3050
+F 0 "D?" V 7596 2970 50  0000 R CNN
+F 1 "D" V 7505 2970 50  0000 R CNN
+F 2 "" H 7550 3050 50  0001 C CNN
+F 3 "~" H 7550 3050 50  0001 C CNN
+	1    7550 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 60645017
+P 7550 3350
+F 0 "C?" H 7668 3396 50  0000 L CNN
+F 1 "CP" H 7668 3305 50  0000 L CNN
+F 2 "" H 7588 3200 50  0001 C CNN
+F 3 "~" H 7550 3350 50  0001 C CNN
+	1    7550 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6064567B
+P 7850 3350
+F 0 "R?" H 7920 3396 50  0000 L CNN
+F 1 "20k" H 7920 3305 50  0000 L CNN
+F 2 "" V 7780 3350 50  0001 C CNN
+F 3 "~" H 7850 3350 50  0001 C CNN
+	1    7850 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 2900 7550 2850
+Wire Wire Line
+	7550 3500 7550 3550
+Wire Wire Line
+	7850 3500 7850 3550
+Wire Wire Line
+	7550 3200 7850 3200
+Connection ~ 7550 3200
+Wire Notes Line
+	4300 4250 950  4250
+Wire Notes Line
+	950  4250 950  2300
+Wire Notes Line
+	950  2300 4300 2300
+Wire Notes Line
+	4300 2300 4300 4250
+Text Notes 1000 2700 0    50   ~ 0
+D3 IS HIGH IF;\n*LOW VOLTAGE\n*REVERSE POLARITY\n*FLOATING INPUT
+Wire Notes Line
+	7300 3900 8150 3900
+Wire Notes Line
+	8150 3900 8150 2550
+Wire Notes Line
+	8150 2550 7300 2550
+Wire Notes Line
+	7300 2550 7300 3900
+Text Notes 7550 2700 0    50   ~ 0
+SNUBBER\n
+Wire Wire Line
+	7850 3550 8900 3550
+Connection ~ 7850 3550
+$Comp
+L Device:R R?
+U 1 1 60653FE5
+P 9950 3050
+F 0 "R?" H 10020 3096 50  0000 L CNN
+F 1 "20k" H 10020 3005 50  0000 L CNN
+F 2 "" V 9880 3050 50  0001 C CNN
+F 3 "~" H 9950 3050 50  0001 C CNN
+	1    9950 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60653FEB
+P 9950 3400
+F 0 "R?" H 10020 3446 50  0000 L CNN
+F 1 "10k" H 10020 3355 50  0000 L CNN
+F 2 "" V 9880 3400 50  0001 C CNN
+F 3 "~" H 9950 3400 50  0001 C CNN
+	1    9950 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D?
+U 1 1 60653FF1
+P 10250 3400
+F 0 "D?" V 10204 3480 50  0000 L CNN
+F 1 "6.2V" V 10295 3480 50  0000 L CNN
+F 2 "" H 10250 3400 50  0001 C CNN
+F 3 "~" H 10250 3400 50  0001 C CNN
+	1    10250 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9950 3250 10250 3250
+Wire Wire Line
+	9950 3250 9950 3200
+Connection ~ 9950 3250
+Wire Wire Line
+	9950 2850 9950 2900
+Wire Wire Line
+	9950 3550 10250 3550
+Text GLabel 9800 3250 0    50   Input ~ 0
+A1
+Wire Wire Line
+	9800 3250 9950 3250
+Connection ~ 7550 2850
+Wire Wire Line
+	7550 2850 8900 2850
+Connection ~ 8900 2850
+Wire Wire Line
+	8900 2850 9950 2850
+Wire Wire Line
+	9200 3550 9950 3550
+Connection ~ 9200 3550
+Connection ~ 9950 3550
+Text GLabel 10750 2850 2    50   Input ~ 0
+LOAD_+
+Wire Wire Line
+	10750 2850 9950 2850
+Connection ~ 9950 2850
+Text GLabel 10850 3550 2    50   Input ~ 0
+GND
+Wire Wire Line
+	10250 3550 10850 3550
+Connection ~ 10250 3550
+Wire Notes Line
+	10550 2550 10550 3850
+Wire Notes Line
+	10550 3850 8500 3850
+Wire Notes Line
+	8500 3850 8500 2550
+Wire Notes Line
+	8500 2550 10550 2550
+Text Notes 8950 2700 0    50   ~ 0
+LOAD BUSS VOLTAGE READING\n
+$Comp
+L Erdem:SLB-12Vdc-SL-CE U?
+U 1 1 6066651E
+P 5200 2500
+F 0 "U?" H 5428 2896 50  0000 L CNN
+F 1 "SLB-12Vdc-SL-CE" H 5428 2805 50  0000 L CNN
+F 2 "" H 4500 2650 50  0001 C CNN
+F 3 "" H 4500 2650 50  0001 C CNN
+	1    5200 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2600 5100 2850
+Wire Wire Line
+	5200 2600 5200 2850
+Text GLabel 6200 1700 2    50   Input ~ 0
+12V
+$Comp
+L Device:LED D?
+U 1 1 6066C122
+P 5400 1150
+F 0 "D?" H 5393 1367 50  0000 C CNN
+F 1 "LED" H 5393 1276 50  0000 C CNN
+F 2 "" H 5400 1150 50  0001 C CNN
+F 3 "~" H 5400 1150 50  0001 C CNN
+	1    5400 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6066D440
+P 4950 1150
+F 0 "R?" V 4743 1150 50  0000 C CNN
+F 1 "800" V 4834 1150 50  0000 C CNN
+F 2 "" V 4880 1150 50  0001 C CNN
+F 3 "~" H 4950 1150 50  0001 C CNN
+	1    4950 1150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 1150 5250 1150
+$Comp
+L Device:D D?
+U 1 1 60670E4F
+P 5150 1550
+F 0 "D?" H 5150 1333 50  0000 C CNN
+F 1 "D" H 5150 1424 50  0000 C CNN
+F 2 "" H 5150 1550 50  0001 C CNN
+F 3 "~" H 5150 1550 50  0001 C CNN
+	1    5150 1550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4800 1150 4700 1150
+Wire Wire Line
+	4700 1150 4700 1550
+Connection ~ 4700 1700
+Wire Wire Line
+	5550 1150 5550 1550
+Connection ~ 5550 1700
+Wire Wire Line
+	5550 1700 6200 1700
+Wire Wire Line
+	5250 1700 5550 1700
+Wire Wire Line
+	4700 1700 5150 1700
+Wire Wire Line
+	4700 1550 5000 1550
+Connection ~ 4700 1550
+Wire Wire Line
+	4700 1550 4700 1700
+Wire Wire Line
+	5300 1550 5550 1550
+Connection ~ 5550 1550
+Wire Wire Line
+	5550 1550 5550 1700
+$Comp
+L Erdem:IRFZ44N U?
+U 1 1 60680DA0
+P 4150 1400
+F 0 "U?" H 4378 1388 50  0000 L CNN
+F 1 "IRFZ44N" H 4378 1297 50  0000 L CNN
+F 2 "" H 4050 1350 50  0001 C CNN
+F 3 "" H 4050 1350 50  0001 C CNN
+	1    4150 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 1650 4150 1700
+Wire Wire Line
+	4150 1700 4700 1700
+$Comp
+L Device:R R?
+U 1 1 60685F80
+P 4100 1950
+F 0 "R?" V 3893 1950 50  0000 C CNN
+F 1 "500k" V 3984 1950 50  0000 C CNN
+F 2 "" V 4030 1950 50  0001 C CNN
+F 3 "~" H 4100 1950 50  0001 C CNN
+	1    4100 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 1950 4250 1650
+Wire Wire Line
+	4050 1650 3900 1650
+Wire Wire Line
+	3900 1650 3900 1950
+Wire Wire Line
+	3900 1950 3950 1950
+Wire Wire Line
+	4250 1950 4250 2100
+Connection ~ 4250 1950
+Text GLabel 4350 2100 2    50   Input ~ 0
+GND
+Text GLabel 3750 1650 0    50   Input ~ 0
+D2
+Wire Wire Line
+	3750 1650 3900 1650
+Connection ~ 3900 1650
+Wire Wire Line
+	4250 2100 4350 2100
+Wire Notes Line
+	3500 2200 4500 2200
+Wire Notes Line
+	4500 2200 4500 2700
+Wire Notes Line
+	4500 2700 5500 2700
+Wire Notes Line
+	5500 2700 5500 2350
+Wire Notes Line
+	5500 2350 6600 2350
+Wire Notes Line
+	6600 2350 6600 750 
+Wire Notes Line
+	6600 750  3500 750 
+Wire Notes Line
+	3500 750  3500 2200
+Text Notes 3550 900  0    50   ~ 0
+RELAY CIRCUIT\n
+Text Notes 5500 1050 0    50   ~ 0
+indicates the relay is on\n
+$Comp
+L Erdem:IRFZ44N U?
+U 1 1 606A7D76
+P 2400 7500
+F 0 "U?" H 2172 7396 50  0000 R CNN
+F 1 "IRFZ44N" H 2172 7487 50  0000 R CNN
+F 2 "" H 2300 7450 50  0001 C CNN
+F 3 "" H 2300 7450 50  0001 C CNN
+	1    2400 7500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Sensor_Current:ACS712xLCTR-30A U?
+U 1 1 606C46BE
+P 5450 3550
+F 0 "U?" H 6150 4050 50  0000 C CNN
+F 1 "ACS712xLCTR-30A" H 6150 4150 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5550 3200 50  0001 L CIN
+F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/ACS712-Datasheet.ashx?la=en" H 5450 3550 50  0001 C CNN
+	1    5450 3550
+	1    0    0    -1  
+$EndComp
+Text GLabel 5450 3050 1    50   Input ~ 0
+5V
+Wire Wire Line
+	4400 3950 5450 3950
+Wire Wire Line
+	4400 3550 4400 3950
+Connection ~ 4400 3550
+Wire Wire Line
+	5450 3950 6000 3950
+Wire Wire Line
+	7050 3950 7050 3550
+Wire Wire Line
+	7050 3550 7550 3550
+Connection ~ 5450 3950
+Connection ~ 7550 3550
+Wire Wire Line
+	7550 3550 7850 3550
+Wire Wire Line
+	5050 3350 4400 3350
+Wire Wire Line
+	4400 3350 4400 3550
+Wire Wire Line
+	5200 2850 7550 2850
+$Comp
+L Device:C C?
+U 1 1 606D0BF4
+P 6000 3800
+F 0 "C?" H 6115 3846 50  0000 L CNN
+F 1 "1nF" H 6115 3755 50  0000 L CNN
+F 2 "" H 6038 3650 50  0001 C CNN
+F 3 "~" H 6000 3800 50  0001 C CNN
+	1    6000 3800
+	1    0    0    -1  
+$EndComp
+Connection ~ 6000 3950
+Wire Wire Line
+	5850 3650 6000 3650
+Wire Wire Line
+	5450 3050 5450 3100
+$Comp
+L Device:CP C?
+U 1 1 606D5404
+P 6250 3450
+F 0 "C?" H 6368 3496 50  0000 L CNN
+F 1 "0.1uF" H 6368 3405 50  0000 L CNN
+F 2 "" H 6288 3300 50  0001 C CNN
+F 3 "~" H 6250 3450 50  0001 C CNN
+	1    6250 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 3100 6250 3100
+Wire Wire Line
+	6250 3100 6250 3300
+Connection ~ 5450 3100
+Wire Wire Line
+	5450 3100 5450 3150
+Wire Wire Line
+	6250 3600 6250 3950
+Wire Wire Line
+	6000 3950 6250 3950
+Connection ~ 6250 3950
+Wire Wire Line
+	6250 3950 7050 3950
+Text GLabel 5850 3550 2    50   Input ~ 0
+A2
+Wire Notes Line
+	6900 2800 6900 4400
+Wire Notes Line
+	6900 4400 4550 4400
+Wire Notes Line
+	4550 4400 4550 3250
+Wire Notes Line
+	4550 3250 5050 3250
+Wire Notes Line
+	5050 3250 5050 2800
+Wire Notes Line
+	6900 2800 5050 2800
+Text Notes 5150 4300 0    50   ~ 0
+ARDUINO MEASURES CURRENT\n
+$Comp
+L Device:R R?
+U 1 1 606E0BFE
+P 2350 6900
+F 0 "R?" V 2143 6900 50  0000 C CNN
+F 1 "999k" V 2234 6900 50  0000 C CNN
+F 2 "" V 2280 6900 50  0001 C CNN
+F 3 "~" H 2350 6900 50  0001 C CNN
+	1    2350 6900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 606E54F9
+P 1400 7250
+F 0 "R?" V 1193 7250 50  0000 C CNN
+F 1 "0.1" V 1284 7250 50  0000 C CNN
+F 2 "" V 1330 7250 50  0001 C CNN
+F 3 "~" H 1400 7250 50  0001 C CNN
+	1    1400 7250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2200 6900 2200 7250
+Wire Wire Line
+	2200 7250 2300 7250
+Wire Wire Line
+	2500 6900 2500 7250
+$Comp
+L Device:D_Zener D?
+U 1 1 606ED2A4
+P 2350 6550
+F 0 "D?" H 2350 6333 50  0000 C CNN
+F 1 "6.8" H 2350 6424 50  0000 C CNN
+F 2 "" H 2350 6550 50  0001 C CNN
+F 3 "~" H 2350 6550 50  0001 C CNN
+	1    2350 6550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2200 6550 2200 6900
+Connection ~ 2200 6900
+Wire Wire Line
+	2500 6550 2500 6900
+Connection ~ 2500 6900
+$Comp
+L Device:CP C?
+U 1 1 606F5255
+P 2350 6150
+F 0 "C?" V 2095 6150 50  0000 C CNN
+F 1 "20uF" V 2186 6150 50  0000 C CNN
+F 2 "" H 2388 6000 50  0001 C CNN
+F 3 "~" H 2350 6150 50  0001 C CNN
+	1    2350 6150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2200 6150 2200 6550
+Connection ~ 2200 6550
+Wire Wire Line
+	2500 6150 2500 6550
+Connection ~ 2500 6550
+$Comp
+L Transistor_BJT:BC547 Q?
+U 1 1 606FE7AA
+P 2300 5600
+F 0 "Q?" V 2535 5600 50  0000 C CNN
+F 1 "BC547" V 2626 5600 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2500 5525 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 2300 5600 50  0001 L CNN
+	1    2300 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 5700 2600 5700
+Wire Wire Line
+	2600 5700 2600 6150
+Wire Wire Line
+	2600 6150 2500 6150
+Connection ~ 2500 6150
+Wire Wire Line
+	2100 6150 2200 6150
+Wire Wire Line
+	2100 5700 2100 6150
+Connection ~ 2200 6150
+$Comp
+L Device:R R?
+U 1 1 60710FAE
+P 2300 5200
+F 0 "R?" H 2370 5246 50  0000 L CNN
+F 1 "R" H 2370 5155 50  0000 L CNN
+F 2 "" V 2230 5200 50  0001 C CNN
+F 3 "~" H 2300 5200 50  0001 C CNN
+	1    2300 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 5350 2300 5400
+Text GLabel 2150 5050 0    50   Input ~ 0
+D4
+Wire Wire Line
+	2150 5050 2300 5050
+Text GLabel 1000 7250 0    50   Input ~ 0
+GND
+Wire Wire Line
+	1550 7250 1600 7250
+Connection ~ 2200 7250
+Wire Wire Line
+	1000 7250 1250 7250
+$Comp
+L Amplifier_Operational:LM741 U?
+U 1 1 60720695
+P 1500 5950
+F 0 "U?" V 1800 6200 50  0000 C CNN
+F 1 "LM741" V 1900 6200 50  0000 C CNN
+F 2 "" H 1550 6000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm741.pdf" H 1650 6100 50  0001 C CNN
+	1    1500 5950
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1800 6050 2    50   Input ~ 0
+GND
+Text GLabel 1350 6350 0    50   Input ~ 0
+V_REF
+Wire Wire Line
+	1350 6350 1400 6350
+Wire Wire Line
+	1400 6350 1400 6250
+Wire Wire Line
+	1600 6250 1600 7250
+Connection ~ 1600 7250
+Wire Wire Line
+	1600 7250 2200 7250
+Wire Wire Line
+	1500 5650 1500 5400
+$Comp
+L Device:R R?
+U 1 1 6072F69C
+P 1500 5250
+F 0 "R?" H 1570 5296 50  0000 L CNN
+F 1 "330k" H 1570 5205 50  0000 L CNN
+F 2 "" V 1430 5250 50  0001 C CNN
+F 3 "~" H 1500 5250 50  0001 C CNN
+	1    1500 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 5100 1500 4850
+Wire Wire Line
+	2600 4850 2600 5700
+Wire Wire Line
+	1500 4850 2600 4850
+Connection ~ 2600 5700
+Text GLabel 1200 6050 0    50   Input ~ 0
+12V
+$Comp
+L Erdem:IRFZ44N U?
+U 1 1 6075AE33
+P 4400 7500
+F 0 "U?" H 4172 7396 50  0000 R CNN
+F 1 "IRFZ44N" H 4172 7487 50  0000 R CNN
+F 2 "" H 4300 7450 50  0001 C CNN
+F 3 "" H 4300 7450 50  0001 C CNN
+	1    4400 7500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6075AE39
+P 4350 6900
+F 0 "R?" V 4143 6900 50  0000 C CNN
+F 1 "999k" V 4234 6900 50  0000 C CNN
+F 2 "" V 4280 6900 50  0001 C CNN
+F 3 "~" H 4350 6900 50  0001 C CNN
+	1    4350 6900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6075AE3F
+P 3400 7250
+F 0 "R?" V 3193 7250 50  0000 C CNN
+F 1 "0.1" V 3284 7250 50  0000 C CNN
+F 2 "" V 3330 7250 50  0001 C CNN
+F 3 "~" H 3400 7250 50  0001 C CNN
+	1    3400 7250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4200 6900 4200 7250
+Wire Wire Line
+	4200 7250 4300 7250
+Wire Wire Line
+	4500 6900 4500 7250
+$Comp
+L Device:D_Zener D?
+U 1 1 6075AE48
+P 4350 6550
+F 0 "D?" H 4350 6333 50  0000 C CNN
+F 1 "6.8" H 4350 6424 50  0000 C CNN
+F 2 "" H 4350 6550 50  0001 C CNN
+F 3 "~" H 4350 6550 50  0001 C CNN
+	1    4350 6550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4200 6550 4200 6900
+Connection ~ 4200 6900
+Wire Wire Line
+	4500 6550 4500 6900
+Connection ~ 4500 6900
+$Comp
+L Device:CP C?
+U 1 1 6075AE52
+P 4350 6150
+F 0 "C?" V 4095 6150 50  0000 C CNN
+F 1 "20uF" V 4186 6150 50  0000 C CNN
+F 2 "" H 4388 6000 50  0001 C CNN
+F 3 "~" H 4350 6150 50  0001 C CNN
+	1    4350 6150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4200 6150 4200 6550
+Connection ~ 4200 6550
+Wire Wire Line
+	4500 6150 4500 6550
+Connection ~ 4500 6550
+$Comp
+L Transistor_BJT:BC547 Q?
+U 1 1 6075AE5C
+P 4300 5600
+F 0 "Q?" V 4535 5600 50  0000 C CNN
+F 1 "BC547" V 4626 5600 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4500 5525 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 4300 5600 50  0001 L CNN
+	1    4300 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 5700 4600 5700
+Wire Wire Line
+	4600 5700 4600 6150
+Wire Wire Line
+	4600 6150 4500 6150
+Connection ~ 4500 6150
+Wire Wire Line
+	4100 6150 4200 6150
+Wire Wire Line
+	4100 5700 4100 6150
+Connection ~ 4200 6150
+$Comp
+L Device:R R?
+U 1 1 6075AE69
+P 4300 5200
+F 0 "R?" H 4370 5246 50  0000 L CNN
+F 1 "R" H 4370 5155 50  0000 L CNN
+F 2 "" V 4230 5200 50  0001 C CNN
+F 3 "~" H 4300 5200 50  0001 C CNN
+	1    4300 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 5350 4300 5400
+Text GLabel 4150 5050 0    50   Input ~ 0
+D4
+Wire Wire Line
+	4150 5050 4300 5050
+Text GLabel 3000 7250 0    50   Input ~ 0
+GND
+Wire Wire Line
+	3550 7250 3600 7250
+Connection ~ 4200 7250
+Wire Wire Line
+	3000 7250 3250 7250
+$Comp
+L Amplifier_Operational:LM741 U?
+U 1 1 6075AE76
+P 3500 5950
+F 0 "U?" V 3800 6200 50  0000 C CNN
+F 1 "LM741" V 3900 6200 50  0000 C CNN
+F 2 "" H 3550 6000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm741.pdf" H 3650 6100 50  0001 C CNN
+	1    3500 5950
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3800 6050 2    50   Input ~ 0
+GND
+Text GLabel 3350 6350 0    50   Input ~ 0
+V_REF
+Wire Wire Line
+	3350 6350 3400 6350
+Wire Wire Line
+	3400 6350 3400 6250
+Wire Wire Line
+	3600 6250 3600 7250
+Connection ~ 3600 7250
+Wire Wire Line
+	3600 7250 4200 7250
+Wire Wire Line
+	3500 5650 3500 5400
+$Comp
+L Device:R R?
+U 1 1 6075AE84
+P 3500 5250
+F 0 "R?" H 3570 5296 50  0000 L CNN
+F 1 "330k" H 3570 5205 50  0000 L CNN
+F 2 "" V 3430 5250 50  0001 C CNN
+F 3 "~" H 3500 5250 50  0001 C CNN
+	1    3500 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 5100 3500 4850
+Wire Wire Line
+	4600 4850 4600 5700
+Wire Wire Line
+	3500 4850 4600 4850
+Connection ~ 4600 5700
+Text GLabel 3200 6050 0    50   Input ~ 0
+12V
+$Comp
+L Erdem:IRFZ44N U?
+U 1 1 607667F1
+P 6400 7500
+F 0 "U?" H 6172 7396 50  0000 R CNN
+F 1 "IRFZ44N" H 6172 7487 50  0000 R CNN
+F 2 "" H 6300 7450 50  0001 C CNN
+F 3 "" H 6300 7450 50  0001 C CNN
+	1    6400 7500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 607667F7
+P 6350 6900
+F 0 "R?" V 6143 6900 50  0000 C CNN
+F 1 "999k" V 6234 6900 50  0000 C CNN
+F 2 "" V 6280 6900 50  0001 C CNN
+F 3 "~" H 6350 6900 50  0001 C CNN
+	1    6350 6900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 607667FD
+P 5400 7250
+F 0 "R?" V 5193 7250 50  0000 C CNN
+F 1 "0.1" V 5284 7250 50  0000 C CNN
+F 2 "" V 5330 7250 50  0001 C CNN
+F 3 "~" H 5400 7250 50  0001 C CNN
+	1    5400 7250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6200 6900 6200 7250
+Wire Wire Line
+	6200 7250 6300 7250
+Wire Wire Line
+	6500 6900 6500 7250
+$Comp
+L Device:D_Zener D?
+U 1 1 60766806
+P 6350 6550
+F 0 "D?" H 6350 6333 50  0000 C CNN
+F 1 "6.8" H 6350 6424 50  0000 C CNN
+F 2 "" H 6350 6550 50  0001 C CNN
+F 3 "~" H 6350 6550 50  0001 C CNN
+	1    6350 6550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6200 6550 6200 6900
+Connection ~ 6200 6900
+Wire Wire Line
+	6500 6550 6500 6900
+Connection ~ 6500 6900
+$Comp
+L Device:CP C?
+U 1 1 60766810
+P 6350 6150
+F 0 "C?" V 6095 6150 50  0000 C CNN
+F 1 "20uF" V 6186 6150 50  0000 C CNN
+F 2 "" H 6388 6000 50  0001 C CNN
+F 3 "~" H 6350 6150 50  0001 C CNN
+	1    6350 6150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6200 6150 6200 6550
+Connection ~ 6200 6550
+Wire Wire Line
+	6500 6150 6500 6550
+Connection ~ 6500 6550
+$Comp
+L Transistor_BJT:BC547 Q?
+U 1 1 6076681A
+P 6300 5600
+F 0 "Q?" V 6535 5600 50  0000 C CNN
+F 1 "BC547" V 6626 5600 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6500 5525 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 6300 5600 50  0001 L CNN
+	1    6300 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 5700 6600 5700
+Wire Wire Line
+	6600 5700 6600 6150
+Wire Wire Line
+	6600 6150 6500 6150
+Connection ~ 6500 6150
+Wire Wire Line
+	6100 6150 6200 6150
+Wire Wire Line
+	6100 5700 6100 6150
+Connection ~ 6200 6150
+$Comp
+L Device:R R?
+U 1 1 60766827
+P 6300 5200
+F 0 "R?" H 6370 5246 50  0000 L CNN
+F 1 "R" H 6370 5155 50  0000 L CNN
+F 2 "" V 6230 5200 50  0001 C CNN
+F 3 "~" H 6300 5200 50  0001 C CNN
+	1    6300 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 5350 6300 5400
+Text GLabel 6150 5050 0    50   Input ~ 0
+D4
+Wire Wire Line
+	6150 5050 6300 5050
+Text GLabel 5000 7250 0    50   Input ~ 0
+GND
+Wire Wire Line
+	5550 7250 5600 7250
+Connection ~ 6200 7250
+Wire Wire Line
+	5000 7250 5250 7250
+$Comp
+L Amplifier_Operational:LM741 U?
+U 1 1 60766834
+P 5500 5950
+F 0 "U?" V 5800 6200 50  0000 C CNN
+F 1 "LM741" V 5900 6200 50  0000 C CNN
+F 2 "" H 5550 6000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm741.pdf" H 5650 6100 50  0001 C CNN
+	1    5500 5950
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5800 6050 2    50   Input ~ 0
+GND
+Text GLabel 5350 6350 0    50   Input ~ 0
+V_REF
+Wire Wire Line
+	5350 6350 5400 6350
+Wire Wire Line
+	5400 6350 5400 6250
+Wire Wire Line
+	5600 6250 5600 7250
+Connection ~ 5600 7250
+Wire Wire Line
+	5600 7250 6200 7250
+Wire Wire Line
+	5500 5650 5500 5400
+$Comp
+L Device:R R?
+U 1 1 60766842
+P 5500 5250
+F 0 "R?" H 5570 5296 50  0000 L CNN
+F 1 "330k" H 5570 5205 50  0000 L CNN
+F 2 "" V 5430 5250 50  0001 C CNN
+F 3 "~" H 5500 5250 50  0001 C CNN
+	1    5500 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 5100 5500 4850
+Wire Wire Line
+	6600 4850 6600 5700
+Wire Wire Line
+	5500 4850 6600 4850
+Connection ~ 6600 5700
+Text GLabel 5200 6050 0    50   Input ~ 0
+12V
+$Comp
+L Erdem:IRFZ44N U?
+U 1 1 6077213E
+P 8550 7450
+F 0 "U?" H 8322 7346 50  0000 R CNN
+F 1 "IRFZ44N" H 8322 7437 50  0000 R CNN
+F 2 "" H 8450 7400 50  0001 C CNN
+F 3 "" H 8450 7400 50  0001 C CNN
+	1    8550 7450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60772144
+P 8500 6850
+F 0 "R?" V 8293 6850 50  0000 C CNN
+F 1 "999k" V 8384 6850 50  0000 C CNN
+F 2 "" V 8430 6850 50  0001 C CNN
+F 3 "~" H 8500 6850 50  0001 C CNN
+	1    8500 6850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6077214A
+P 7550 7200
+F 0 "R?" V 7343 7200 50  0000 C CNN
+F 1 "0.1" V 7434 7200 50  0000 C CNN
+F 2 "" V 7480 7200 50  0001 C CNN
+F 3 "~" H 7550 7200 50  0001 C CNN
+	1    7550 7200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8350 6850 8350 7200
+Wire Wire Line
+	8350 7200 8450 7200
+Wire Wire Line
+	8650 6850 8650 7200
+$Comp
+L Device:D_Zener D?
+U 1 1 60772153
+P 8500 6500
+F 0 "D?" H 8500 6283 50  0000 C CNN
+F 1 "6.8" H 8500 6374 50  0000 C CNN
+F 2 "" H 8500 6500 50  0001 C CNN
+F 3 "~" H 8500 6500 50  0001 C CNN
+	1    8500 6500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8350 6500 8350 6850
+Connection ~ 8350 6850
+Wire Wire Line
+	8650 6500 8650 6850
+Connection ~ 8650 6850
+$Comp
+L Device:CP C?
+U 1 1 6077215D
+P 8500 6100
+F 0 "C?" V 8245 6100 50  0000 C CNN
+F 1 "20uF" V 8336 6100 50  0000 C CNN
+F 2 "" H 8538 5950 50  0001 C CNN
+F 3 "~" H 8500 6100 50  0001 C CNN
+	1    8500 6100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8350 6100 8350 6500
+Connection ~ 8350 6500
+Wire Wire Line
+	8650 6100 8650 6500
+Connection ~ 8650 6500
+$Comp
+L Transistor_BJT:BC547 Q?
+U 1 1 60772167
+P 8450 5550
+F 0 "Q?" V 8685 5550 50  0000 C CNN
+F 1 "BC547" V 8776 5550 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 8650 5475 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 8450 5550 50  0001 L CNN
+	1    8450 5550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8650 5650 8750 5650
+Wire Wire Line
+	8750 5650 8750 6100
+Wire Wire Line
+	8750 6100 8650 6100
+Connection ~ 8650 6100
+Wire Wire Line
+	8250 6100 8350 6100
+Wire Wire Line
+	8250 5650 8250 6100
+Connection ~ 8350 6100
+$Comp
+L Device:R R?
+U 1 1 60772174
+P 8450 5150
+F 0 "R?" H 8520 5196 50  0000 L CNN
+F 1 "R" H 8520 5105 50  0000 L CNN
+F 2 "" V 8380 5150 50  0001 C CNN
+F 3 "~" H 8450 5150 50  0001 C CNN
+	1    8450 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 5300 8450 5350
+Text GLabel 8300 5000 0    50   Input ~ 0
+D4
+Wire Wire Line
+	8300 5000 8450 5000
+Text GLabel 7150 7200 0    50   Input ~ 0
+GND
+Wire Wire Line
+	7700 7200 7750 7200
+Connection ~ 8350 7200
+Wire Wire Line
+	7150 7200 7400 7200
+$Comp
+L Amplifier_Operational:LM741 U?
+U 1 1 60772181
+P 7650 5900
+F 0 "U?" V 7950 6150 50  0000 C CNN
+F 1 "LM741" V 8050 6150 50  0000 C CNN
+F 2 "" H 7700 5950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm741.pdf" H 7800 6050 50  0001 C CNN
+	1    7650 5900
+	0    -1   -1   0   
+$EndComp
+Text GLabel 7950 6000 2    50   Input ~ 0
+GND
+Text GLabel 7500 6300 0    50   Input ~ 0
+V_REF
+Wire Wire Line
+	7500 6300 7550 6300
+Wire Wire Line
+	7550 6300 7550 6200
+Wire Wire Line
+	7750 6200 7750 7200
+Connection ~ 7750 7200
+Wire Wire Line
+	7750 7200 8350 7200
+Wire Wire Line
+	7650 5600 7650 5350
+$Comp
+L Device:R R?
+U 1 1 6077218F
+P 7650 5200
+F 0 "R?" H 7720 5246 50  0000 L CNN
+F 1 "330k" H 7720 5155 50  0000 L CNN
+F 2 "" V 7580 5200 50  0001 C CNN
+F 3 "~" H 7650 5200 50  0001 C CNN
+	1    7650 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 5050 7650 4800
+Wire Wire Line
+	8750 4800 8750 5650
+Wire Wire Line
+	7650 4800 8750 4800
+Connection ~ 8750 5650
+Text GLabel 7350 6000 0    50   Input ~ 0
+12V
+Wire Notes Line
+	9500 4650 9500 8500
+Wire Notes Line
+	9500 8500 650  8500
+Wire Notes Line
+	650  8500 650  4650
+Wire Notes Line
+	650  4650 9500 4650
+Text Notes 3950 8200 0    197  ~ 0
+DUMMY LOAD\n
+$Comp
+L Erdem:fan U?
+U 1 1 6079FFAC
+P 10150 5250
+F 0 "U?" H 10308 5238 50  0000 L CNN
+F 1 "fan" H 10308 5147 50  0000 L CNN
+F 2 "" H 9800 5250 50  0001 C CNN
+F 3 "" H 9800 5250 50  0001 C CNN
+	1    10150 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Erdem:fan U?
+U 1 1 607A0ABD
+P 10600 5250
+F 0 "U?" H 10758 5238 50  0000 L CNN
+F 1 "fan" H 10758 5147 50  0000 L CNN
+F 2 "" H 10250 5250 50  0001 C CNN
+F 3 "" H 10250 5250 50  0001 C CNN
+	1    10600 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Erdem:IRFZ44N U?
+U 1 1 607A1C22
+P 11250 5200
+F 0 "U?" H 11478 5188 50  0000 L CNN
+F 1 "IRFZ44N" H 11478 5097 50  0000 L CNN
+F 2 "" H 11150 5150 50  0001 C CNN
+F 3 "" H 11150 5150 50  0001 C CNN
+	1    11250 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 5650 10250 5450
+Wire Wire Line
+	10250 5650 10700 5650
+Wire Wire Line
+	10700 5650 10700 5450
+Text GLabel 9850 5650 0    50   Input ~ 0
+12V
+Wire Wire Line
+	10050 5650 9850 5650
+Wire Wire Line
+	10050 5450 10050 5550
+Wire Wire Line
+	10500 5550 10500 5450
+Wire Wire Line
+	10050 5550 10500 5550
+Connection ~ 10050 5550
+Wire Wire Line
+	10050 5550 10050 5650
+Wire Wire Line
+	10700 5650 11250 5650
+Wire Wire Line
+	11250 5650 11250 5450
+Connection ~ 10700 5650
+Text GLabel 11550 5450 2    50   Input ~ 0
+GND
+Text GLabel 10950 4900 1    50   Input ~ 0
+D5
+Wire Wire Line
+	10950 4900 10950 5500
+Wire Wire Line
+	10950 5500 11150 5500
+Wire Wire Line
+	11150 5500 11150 5450
+Wire Wire Line
+	11350 5450 11550 5450
+Wire Notes Line
+	12050 4650 12050 6100
+Wire Notes Line
+	12050 6100 9600 6100
+Wire Notes Line
+	9600 6100 9600 4650
+Wire Notes Line
+	9600 4650 12050 4650
+$Comp
+L Sensor_Temperature:LM35-LP U?
+U 1 1 6081C2BE
+P 10400 6800
+F 0 "U?" V 9933 6800 50  0000 C CNN
+F 1 "LM35-LP" V 10024 6800 50  0000 C CNN
+F 2 "" H 10450 6550 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm35.pdf" H 10400 6800 50  0001 C CNN
+	1    10400 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensor_Temperature:LM35-LP U?
+U 1 1 6081D850
+P 11500 6800
+F 0 "U?" V 11033 6800 50  0000 C CNN
+F 1 "LM35-LP" V 11124 6800 50  0000 C CNN
+F 2 "" H 11550 6550 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm35.pdf" H 11500 6800 50  0001 C CNN
+	1    11500 6800
+	0    1    1    0   
+$EndComp
+Text GLabel 10400 7350 3    50   Input ~ 0
+A3
+Wire Wire Line
+	10400 7200 10400 7350
+Text GLabel 11500 7350 3    50   Input ~ 0
+A4
+Wire Wire Line
+	11500 7200 11500 7350
+Text GLabel 10000 6800 0    50   Input ~ 0
+GND
+Wire Wire Line
+	10100 6800 10000 6800
+Text GLabel 10700 6800 2    50   Input ~ 0
+5V
+Text GLabel 11800 6800 2    50   Input ~ 0
+5V
+Text GLabel 11200 6800 0    50   Input ~ 0
+GND
+Wire Notes Line
+	9600 6250 12050 6250
+Wire Notes Line
+	12050 6250 12050 7550
+Wire Notes Line
+	9600 7550 9600 6250
+Wire Notes Line
+	9600 7550 12050 7550
+Text Notes 10600 6000 0    157  ~ 0
+FAN\n
+Text Notes 10700 7300 0    50   ~ 0
+THERMOMETER\n
+$Comp
+L MCU_Module:Arduino_UNO_R3 A?
+U 1 1 608576BC
+P 13600 5950
+F 0 "A?" H 13600 7131 50  0000 C CNN
+F 1 "Arduino_UNO_R3" H 13600 7040 50  0000 C CNN
+F 2 "Module:Arduino_UNO_R3" H 13600 5950 50  0001 C CIN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 13600 5950 50  0001 C CNN
+	1    13600 5950
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	12400 7800 12400 9200
+Wire Notes Line
+	12400 9200 9650 9200
+Wire Notes Line
+	9650 7800 12400 7800
+Wire Notes Line
+	9650 7800 9650 9200
+Text GLabel 10100 8450 0    50   Input ~ 0
+12V
+Wire Notes Line
+	11500 8200 11500 8700
+Wire Notes Line
+	11500 8700 10400 8700
+Wire Notes Line
+	10400 8700 10400 8200
+Wire Notes Line
+	10500 8200 10500 8250
+Wire Notes Line
+	10400 8200 11500 8200
+Text Notes 10700 8450 0    50   ~ 0
+220V mains AC\n
+Wire Notes Line
+	14800 7500 12250 7500
+Wire Notes Line
+	12250 7500 12250 4650
+Wire Notes Line
+	12250 4650 14800 4650
+Wire Notes Line
+	14800 4650 14800 7500
+Wire Notes Line
+	15100 7800 15100 9150
+Wire Notes Line
+	15100 9150 12700 9150
+Wire Notes Line
+	12700 9150 12700 7800
+Wire Notes Line
+	12700 7800 15100 7800
+Text Notes 13750 8400 0    50   ~ 0
+V_REF\n
+$EndSCHEMATC
