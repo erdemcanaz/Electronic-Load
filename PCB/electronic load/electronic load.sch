@@ -951,7 +951,7 @@ U 1 1 61E6F91A
 P 10800 1700
 F 0 "U1" H 10800 1942 50  0000 C CNN
 F 1 "L78L33_TO92" H 10800 1851 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 10800 1925 50  0001 C CIN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 10800 1925 50  0001 C CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 10800 1650 50  0001 C CNN
 	1    10800 1700
 	1    0    0    -1  
